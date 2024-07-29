@@ -1,0 +1,16 @@
+# For Windows: install Microsoft Visual C++ Build Tools first
+# Otherwise:
+# # onnxruntime==1.17.1 # chromadb dependency: on Mac use `conda install onnxruntime -c conda-forge`
+# install onnxruntime before installing `chromadb` to prevent conflicts
+
+langchain==0.2.2
+langchain-community==0.2.3
+langchain-openai==0.1.8 # For embeddings
+unstructured==0.14.4 # Document loading
+chromadb==0.5.0 # Vector storage
+openai==1.31.1 # For embeddings
+tiktoken==0.7.0  # For embeddings 
+
+#The following are required for running the Spacy version of the notebook
+spacy==3.7.2
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1-py3-none-any.whl
